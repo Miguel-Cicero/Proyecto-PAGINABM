@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Introducción formularios web</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Un formulario sirve para enviar datos a otra página que los recoge para usarlos o almacenarlos."/>
+
+	<link rel="stylesheet" type="text/css" href="css.css">
+
+</head>
+
+<body>
+
+<form method="POST" action="registrar.php">
+	<center>
+		<img src="logobm.png" width="350" height="200">
+		<h1><B>Ingrese la tarjeta de</B></h1>
+		<h2><B>CLUB LA NACION</B></h2>
+	</center>
+				
+	<input name="nombre" type="text" placeholder="Nombre" required/>
+
+	<input name="dni" type="number" placeholder="Nº Documento" required />
+
+	<input name="tarclubnacion" type="number" placeholder="Nº Tarjeta Club Nacion" required />
+
+	<input name="totalbruto" type="number" placeholder="Total bruto $" required />
+	
+	<style type="text/css">
+		#lista {
+			width: 100%;
+			font-family: "Roboto", sans-serif;
+			padding: 10px;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box; 
+			border: none; 
+			color: #525c66; 
+			font-size: 1em;
+			margin-bottom: 15px;
+			outline:none;
+		}
+	</style>
+
+	<select id="lista" name="descuento">
+		<div>Descuento</div>
+		<option value="Otro">Otro</option>
+		<option value="15">15%</option> 
+		<option value="20">20%</option> 
+		<option value="25">25%</option>
+		<option value="30">30%</option>
+	</select>
+				
+	<center><button id="enviar" name="enviar" type="submit" oncss="btn">ENVIAR</button></center>
+</form>	
+
+</body>
+</html>

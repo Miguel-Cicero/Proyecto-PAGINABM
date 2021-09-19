@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400);
+
+form{
+  padding: 5.5%;
+  background-color: #003663;
+  box-shadow: 5px 8px 10px black;
+  display: inline-block;
+  width: 35%;
+  margin: 1%;
+  border: solid 1px white;
+}
+
+body {
+	background-color: #003663;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  color: white;
+  font-family: "Roboto" sans-serif;
+}
+
+h2 {
+  color: #003663;
+  font-size: 2vw;
+  font-family: "Roboto", sans-serif;
+}
+
+h4 {
+	color: red;
+	font-family: "Roboto", sans-serif;
+}
+
+
+
+.boton {
+  width: 100%;
+  padding: 1%;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
+.boton:hover {
+  background-color: #2E4F95;
+  color: white;
+  cursor: pointer;
+}
+
+#formuno {
+  float: left;
+}
+
+#formdos {
+  float: right;
+}
+
+@display media 200

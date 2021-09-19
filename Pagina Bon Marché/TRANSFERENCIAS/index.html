@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transferencias</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Un formulario sirve para enviar datos a otra página que los recoge para usarlos o almacenarlos."/>
+
+	<link rel="stylesheet" type="text/css" href="csstransferencias.css">
+
+</head>
+
+<body>
+
+<form method="POST" action="registrar.php">
+	<center>
+		<h1><B>TRANSFERENCIAS</B></h1>
+	</center>
+				
+	<input name="nombre" type="text" placeholder="Nombre responsable" required />
+	
+	<style type="text/css">
+		#lista {
+			width: 100%;
+			font-family: "Roboto", sans-serif;
+			padding: 10px;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box; 
+			border: none; 
+			color: #525c66; 
+			font-size: 1em;
+			margin-bottom: 15px;
+			outline:none;
+		}
+	</style>
+
+	<select id="lista" name="receptor">
+		<option value="Otro">Receptor (Opcional)</option>
+		<option value="Hector">Hector</option> 
+		<option value="Gorumand">Gorumand Food hall</option> 
+		<option value="Otro">Otro</option>
+	</select>
+
+	<h4>*La fecha de ingreso se completa automáticamente despues de enviar los datos.*</h4>
+	
+	<h2>Productos</h2>
+
+	<textarea name="productos" required></textarea>
+
+	<center><button id="enviar" name="enviar" type="submit" oncss="btn">ENVIAR</button></center>
+</form>	
+
+</body>
+</html>

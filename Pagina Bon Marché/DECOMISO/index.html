@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Decomiso</title>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Un formulario sirve para enviar datos a otra página que los recoge para usarlos o almacenarlos."/>
+
+	<link rel="stylesheet" type="text/css" href="cssdecomiso.css">
+
+</head>
+
+<body>
+
+<form method="POST" action="registrar.php">
+
+	<center>
+		<h1><B>DECOMISOS</B></h1>
+	</center>
+
+	<input name="nombre" type="text" placeholder="Nombre producto" required/>
+
+	<input name="descripcion" type="number" placeholder="Descripcion producto" required/>
+
+	<input name="cantidad" type="number" placeholder="Cantidad" required />
+
+	<input name="codbarras" type="number" placeholder="Codigo de barras (Opcional)" />
+	
+	<style type="text/css">
+		#lista {
+			width: 100%;
+			font-family: "Roboto", sans-serif;
+			padding: 10px;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			border: none;
+			color: #525c66; 
+			font-size: 1em;
+			margin-bottom: 15px;
+			outline:none;
+		}
+	</style>
+
+	<center><button id="enviar" name="enviar" type="submit" oncss="btn">ENVIAR</button></center>
+</form>	
+
+</body>
+</html>

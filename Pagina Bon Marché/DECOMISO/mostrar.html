@@ -1,0 +1,56 @@
+<?php 
+
+	$conexion=mysqli_connect('localhost','id16462823_bonmarche','p}AEn)H%H7z*O)jf','id16462823_clubnacionbm');
+
+ ?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mostrar Decomiso</title>
+	<link rel="stylesheet" type="text/css" href="csstabla.css">
+</head>
+<body bgcolor="#3B3B3B">
+
+
+<br>
+
+	<center><h2 style="color: white; font-family: helvetica;">DECOMISO</h2></center>
+
+	<table cellspacing="0">
+		<tr id="tabla">
+				<b>
+				<td class="txttabla">Codigo</td>
+			    <td class="txttabla">Nombre producto</td>
+			    <td class="txttabla">Descripción</td>
+			    <td class="txttabla">Cantidad</td>
+			    <td class="txttabla">Codigo de barras</td>
+			    <td class="txttabla">Fecha</td>
+				</b>
+		</tr>
+
+		<?php
+		$sql="SELECT * from decomiso";
+		$result=mysqli_query($conexion,$sql);
+
+		while($mostrar=mysqli_fetch_array($result)){
+		 ?>
+
+		<tr>
+			<td class="txtdatos"><?php echo $mostrar['id'] ?></td>
+			<td class="txtdatos"><?php echo $mostrar['nombre'] ?></td>
+			<td class="txtdatos"><?php echo $mostrar['descripcion'] ?></td>
+			<td class="txtdatos"><?php echo $mostrar['cantidad'] ?></td>
+			<td class="txtdatos"><?php echo $mostrar['codbarras'] ?></td>
+			<td class="txtdatos"><?php echo $mostrar['fecha'] ?></td>
+
+			<td class="txtdatos"><a href="https://databases-auth.000webhost.com/sql.php?db=id16462823_clubnacionbm">EDITAR</a></td>
+		</tr>
+	<?php 
+	}
+	 ?>
+	</table>
+
+</body>
+</html>
